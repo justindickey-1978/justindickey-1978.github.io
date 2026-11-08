@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Christmas Card List</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf8f2;--ink:#1d2a24;--muted:#5d6b63;--green:#1f4d3a;--red:#9b1c2c;--gold:#b8892b;--card:#ffffff;--line:#e4dccb}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a16;--ink:#efe9dc;--muted:#a9b5ad;--green:#7fbf9f;--red:#e0707f;--gold:#d9b05a;--card:#18241e;--line:#2c3a33}}
+:root[data-theme="dark"]{--bg:#111a16;--ink:#efe9dc;--muted:#a9b5ad;--green:#7fbf9f;--red:#e0707f;--gold:#d9b05a;--card:#18241e;--line:#2c3a33}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif}
+main{max-width:560px;margin:0 auto;padding:32px 16px 48px}
+.kicker{font:600 12px/1 Inter,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--red);text-align:center}
+h1{font:600 34px/1.1 "Cormorant Garamond",Georgia,serif;text-align:center;margin:10px 0 6px;color:var(--green)}
+.orn{text-align:center;color:var(--gold);letter-spacing:.5em;margin:6px 0 22px}
+ol{padding:0;margin:0;list-style:none;counter-reset:s}
+li{counter-increment:s;position:relative;padding:0 0 18px 44px}
+li::before{content:counter(s);position:absolute;left:0;top:0;width:30px;height:30px;border-radius:50%;background:var(--green);color:#fff;font:600 15px/30px Inter,sans-serif;text-align:center}
+li b{display:block}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.btn{flex:1 1 150px;display:block;text-align:center;padding:13px 14px;border-radius:12px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.primary{background:var(--red);color:#fff}
+.secondary{background:var(--card);color:var(--green);border:1.5px solid var(--green)}
+.note{color:var(--muted);font-size:14px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:8px}
+summary{cursor:pointer;font-weight:600;color:var(--green)}
+pre{white-space:pre-wrap;font:13px/1.5 ui-monospace,Menlo,monospace;margin:10px 0 0}
+.toast{color:var(--green);font-size:14px;min-height:20px;margin-top:6px}
+footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+</style></head><body><main>
+<div class="kicker">State &amp; Local Team</div>
+<h1>Christmas Card List</h1>
+<div class="orn">✦ ✦ ✦</div>
+<ol>
+<li><b>Take a photo of the finished sheet.</b><span class="note">Flat, in good light, all rows in frame.</span></li>
+<li><b>Open your AI app with the instructions.</b>
+<span class="note">Tapping a button copies the instructions too. If they don't appear in the chat box, just paste.</span>
+<div class="btns">
+<a class="btn primary" data-open href="https://claude.ai/new?q=I%27m%20attaching%20a%20photo%20of%20a%20handwritten%20sign-up%20sheet%20titled%20%22State%20%26%20Local%20Team%20%E2%80%94%20Christmas%20Card%20List%22.%20Each%20row%20has%20a%20name%2C%20a%20street%20address%2C%20and%20city%20/%20state%20/%20ZIP.%20Please%20turn%20it%20into%20contacts%20I%20can%20import%20into%20my%20phone.%0A%0A1.%20Read%20every%20filled-in%20row.%20Skip%20blank%20or%20crossed-out%20rows.%20Don%27t%20guess%3A%20if%20a%20name%2C%20number%20or%20ZIP%20is%20hard%20to%20read%2C%20mark%20it%20with%20%5B%3F%5D.%0A2.%20First%2C%20show%20me%20a%20table%20of%20what%20you%20read%20%28name%2C%20street%2C%20city%2C%20state%2C%20ZIP%29%20and%20list%20anything%20marked%20%5B%3F%5D%20so%20I%20can%20correct%20it.%0A3.%20Then%20create%20ONE%20vCard%20file%20%28version%203.0%29%20named%20state-local-christmas-card-list.vcf%20with%20one%20contact%20per%20row%3A%0A%20%20%20-%20FN%20and%20N%20from%20the%20name%20as%20written.%20A%20couple%20%28%22Jane%20%26%20John%20Smith%22%29%20is%20one%20contact%2C%20last%20name%20Smith.%0A%20%20%20-%20ADR%3BTYPE%3DHOME%20with%20street%2C%20city%2C%20state%2C%20ZIP%2C%20country%20USA.%0A%20%20%20-%20CATEGORIES%3AState%20%26%20Local%20Team%20Christmas%20Card%20List%0A%20%20%20-%20NOTE%3AChristmas%20card%20list%2C%20State%20%26%20Local%20team%0A%20%20%20Give%20it%20to%20me%20as%20a%20downloadable%20file.%20If%20you%20can%27t%20attach%20files%2C%20put%20the%20full%20vCard%20text%20in%20one%20code%20block.%0A4.%20Finish%20with%20short%20steps%20for%20my%20phone%3A%0A%20%20%20-%20iPhone%3A%20open%20the%20.vcf%20file%20and%20tap%20%22Add%20All%20Contacts%22.%20Then%20in%20Contacts%2C%20tap%20Lists%2C%20then%20Add%20List%2C%20name%20it%20%22State%20%26%20Local%20Team%20Christmas%20Card%20List%22%2C%20and%20add%20these%20contacts.%0A%20%20%20-%20Android%3A%20in%20Google%20Contacts%2C%20go%20to%20Fix%20%26%20manage%2C%20then%20Import%2C%20and%20choose%20the%20file.%20Then%20select%20the%20new%20contacts%20and%20add%20the%20label%20%22State%20%26%20Local%20Team%20Christmas%20Card%20List%22%20if%20it%20isn%27t%20already%20there.">Open Claude</a>
+<a class="btn secondary" data-open href="https://chatgpt.com/?q=I%27m%20attaching%20a%20photo%20of%20a%20handwritten%20sign-up%20sheet%20titled%20%22State%20%26%20Local%20Team%20%E2%80%94%20Christmas%20Card%20List%22.%20Each%20row%20has%20a%20name%2C%20a%20street%20address%2C%20and%20city%20/%20state%20/%20ZIP.%20Please%20turn%20it%20into%20contacts%20I%20can%20import%20into%20my%20phone.%0A%0A1.%20Read%20every%20filled-in%20row.%20Skip%20blank%20or%20crossed-out%20rows.%20Don%27t%20guess%3A%20if%20a%20name%2C%20number%20or%20ZIP%20is%20hard%20to%20read%2C%20mark%20it%20with%20%5B%3F%5D.%0A2.%20First%2C%20show%20me%20a%20table%20of%20what%20you%20read%20%28name%2C%20street%2C%20city%2C%20state%2C%20ZIP%29%20and%20list%20anything%20marked%20%5B%3F%5D%20so%20I%20can%20correct%20it.%0A3.%20Then%20create%20ONE%20vCard%20file%20%28version%203.0%29%20named%20state-local-christmas-card-list.vcf%20with%20one%20contact%20per%20row%3A%0A%20%20%20-%20FN%20and%20N%20from%20the%20name%20as%20written.%20A%20couple%20%28%22Jane%20%26%20John%20Smith%22%29%20is%20one%20contact%2C%20last%20name%20Smith.%0A%20%20%20-%20ADR%3BTYPE%3DHOME%20with%20street%2C%20city%2C%20state%2C%20ZIP%2C%20country%20USA.%0A%20%20%20-%20CATEGORIES%3AState%20%26%20Local%20Team%20Christmas%20Card%20List%0A%20%20%20-%20NOTE%3AChristmas%20card%20list%2C%20State%20%26%20Local%20team%0A%20%20%20Give%20it%20to%20me%20as%20a%20downloadable%20file.%20If%20you%20can%27t%20attach%20files%2C%20put%20the%20full%20vCard%20text%20in%20one%20code%20block.%0A4.%20Finish%20with%20short%20steps%20for%20my%20phone%3A%0A%20%20%20-%20iPhone%3A%20open%20the%20.vcf%20file%20and%20tap%20%22Add%20All%20Contacts%22.%20Then%20in%20Contacts%2C%20tap%20Lists%2C%20then%20Add%20List%2C%20name%20it%20%22State%20%26%20Local%20Team%20Christmas%20Card%20List%22%2C%20and%20add%20these%20contacts.%0A%20%20%20-%20Android%3A%20in%20Google%20Contacts%2C%20go%20to%20Fix%20%26%20manage%2C%20then%20Import%2C%20and%20choose%20the%20file.%20Then%20select%20the%20new%20contacts%20and%20add%20the%20label%20%22State%20%26%20Local%20Team%20Christmas%20Card%20List%22%20if%20it%20isn%27t%20already%20there.">Open ChatGPT</a>
+</div>
+<div class="btns"><button class="btn secondary" id="copy" type="button">Copy instructions only</button></div>
+<div class="toast" id="toast" aria-live="polite"></div>
+</li>
+<li><b>Attach the photo and send.</b><span class="note">Check the table it shows you, then download the contacts file it makes.</span></li>
+<li><b>Add them to your phone.</b>
+<span class="note"><b style="display:inline">iPhone:</b> open the file, tap “Add All Contacts”, then Contacts → Lists → Add List → “State &amp; Local Team Christmas Card List”, and add them.<br>
+<b style="display:inline">Android:</b> Google Contacts → Fix &amp; manage → Import, then give them the label “State &amp; Local Team Christmas Card List”.</span></li>
+</ol>
+<details><summary>See the instructions</summary><pre id="prompt">I&#x27;m attaching a photo of a handwritten sign-up sheet titled &quot;State &amp; Local Team — Christmas Card List&quot;. Each row has a name, a street address, and city / state / ZIP. Please turn it into contacts I can import into my phone.
+
+1. Read every filled-in row. Skip blank or crossed-out rows. Don&#x27;t guess: if a name, number or ZIP is hard to read, mark it with [?].
+2. First, show me a table of what you read (name, street, city, state, ZIP) and list anything marked [?] so I can correct it.
+3. Then create ONE vCard file (version 3.0) named state-local-christmas-card-list.vcf with one contact per row:
+   - FN and N from the name as written. A couple (&quot;Jane &amp; John Smith&quot;) is one contact, last name Smith.
+   - ADR;TYPE=HOME with street, city, state, ZIP, country USA.
+   - CATEGORIES:State &amp; Local Team Christmas Card List
+   - NOTE:Christmas card list, State &amp; Local team
+   Give it to me as a downloadable file. If you can&#x27;t attach files, put the full vCard text in one code block.
+4. Finish with short steps for my phone:
+   - iPhone: open the .vcf file and tap &quot;Add All Contacts&quot;. Then in Contacts, tap Lists, then Add List, name it &quot;State &amp; Local Team Christmas Card List&quot;, and add these contacts.
+   - Android: in Google Contacts, go to Fix &amp; manage, then Import, and choose the file. Then select the new contacts and add the label &quot;State &amp; Local Team Christmas Card List&quot; if it isn&#x27;t already there.</pre></details>
+<footer>This page stores nothing. The photo goes only to the AI app you choose.<br>Merry Christmas ✦</footer>
+</main>
+<script>
+const text=document.getElementById('prompt').textContent;
+const toast=document.getElementById('toast');
+async function copy(){try{await navigator.clipboard.writeText(text);toast.textContent='Instructions copied.';return true}catch(e){
+const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');toast.textContent='Instructions copied.'}catch(_){toast.textContent='Open “See the instructions” below and copy them.'}t.remove()}}
+document.getElementById('copy').addEventListener('click',copy);
+document.querySelectorAll('[data-open]').forEach(a=>a.addEventListener('click',()=>{copy()}));
+</script>
+</body></html>
